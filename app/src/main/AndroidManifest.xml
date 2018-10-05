@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ratul.cprogrammingtutorial">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainMenu" />
+        <activity android:name=".TutorialActivity" />
+        <activity android:name=".ProgramsActivity" />
+        <activity android:name=".FaqActivity" />
+        <activity android:name=".QuestionsActivity" />
+        <activity android:name=".Chapter1Activity" />
+        <activity android:name=".Chapter2Activity" />
+        <activity android:name=".Chapter3Activity" />
+        <activity android:name=".Chapter4Activity" />
+        <activity android:name=".Chapter5Activity" />
+        <activity android:name=".Chapter6Activity" />
+        <activity android:name=".Chapter7Activity" />
+        <activity android:name=".Chapter8Activity" />
+        <activity android:name=".Chapter9Activity" />
+        <activity android:name=".Chapter10Activity" />
+        <activity android:name=".program_1" />
+        <activity android:name=".Quiz" />
+        <activity android:name=".program_2" />
+        <activity android:name=".program_3" />
+        <activity android:name=".program_4" />
+        <activity android:name=".program_5" />
+        <activity android:name=".program_6" />
+        <activity android:name=".program_7" />
+        <activity android:name=".program_8" />
+        <activity android:name=".program_9" />
+        <activity android:name=".program_10" />
+        <activity android:name=".program_11" />
+        <activity android:name=".program_12" />
+        <activity android:name=".program_13" />
+        <activity android:name=".program_14" />
+        <activity android:name=".program_15" />
+        <activity android:name=".program_16" />
+        <activity android:name=".program_17" />
+        <activity android:name=".program_18" />
+        <activity android:name=".Faq1Activity" />
+        <activity android:name=".Faq2Activity" />
+        <activity android:name=".Faq3Activity" />
+        <activity android:name=".Faq4Activity" />
+        <activity android:name=".Faq5Activity" />
+        <activity android:name=".Faq6Activity" />
+        <activity android:name=".Faq7Activity" />
+        <activity android:name=".Faq8Activity" />
+        <activity android:name=".Faq9Activity" />
+        <activity android:name=".Faq10Activity" />
+        <activity
+            android:name=".ConceptActivity"
+            android:parentActivityName=".Quiz">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Quiz" />
+        </activity>
+        <activity
+            android:name=".ResultActivity"
+            android:parentActivityName=".Quiz">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Quiz" />
+        </activity>
+        <activity
+            android:name=".ViewAnswerActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".AboutUsActivity"></activity>
+    </application>
+
+</manifest>

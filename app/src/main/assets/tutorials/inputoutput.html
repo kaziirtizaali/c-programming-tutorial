@@ -1,0 +1,310 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:105%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:105%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;
+	font-weight:normal;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.msotitlecxspfirst, li.msotitlecxspfirst, div.msotitlecxspfirst
+	{mso-style-name:msotitlecxspfirst;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.msotitlecxspmiddle, li.msotitlecxspmiddle, div.msotitlecxspmiddle
+	{mso-style-name:msotitlecxspmiddle;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.msotitlecxsplast, li.msotitlecxsplast, div.msotitlecxsplast
+	{mso-style-name:msotitlecxsplast;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msopapdefault, li.msopapdefault, div.msopapdefault
+	{mso-style-name:msopapdefault;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:105%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoTitle align=center style='text-align:center'><b><u><span
+style='font-size:22.0pt;color:#C00000'>Chapter 4: Inputs and Outputs</span></u></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><b><u><span style='font-size:18.0pt;line-height:105%;color:#0070C0'>4.1:
+Formatted IO - printf &amp; scanf</span></u></b></h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:105%;
+color:#E91E63'>4.1.1 Formatted Output - printf</span></b><span
+style='font-size:13.0pt;line-height:105%;color:black'><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>It</span> takes text and values from within the
+program and sends it out onto the screen.<br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>printf</span>(''%f is your weight\n'', w);<br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>In the above program statement:<span
+class=apple-converted-space>&nbsp;</span></span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>''%f is your weight\n'' is the control string<span
+class=apple-converted-space>&nbsp;</span></span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>w &nbsp; is the variable to be printed<span
+class=apple-converted-space>&nbsp;</span></span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>%f &nbsp; meaning that a floating point value is
+to be printed.</span><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>The number of conversion specifications and the
+number of variables following the control string must be same, and that the
+conversion character is correct for the type of the parameter.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:105%;color:#E91E63'>4.1.2
+Formatted Input - scanf</span></b><span style='font-size:13.0pt;line-height:
+105%;color:black'><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>scanf</span> is used to get input from user and to
+store it in the specified variable(s).<br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>scanf</span>(''%d'', &amp;x);<br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>read a decimal integer from the keyboard and store
+the value in the memory address of the variable x.</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:105%;color:#E91E63'>4.1.3
+Character Escape Sequences</span></b><span style='font-size:13.0pt;line-height:
+105%;color:black'><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; There are several character escape
+sequences which can be used in place of a character constant or within a
+string.<span class=apple-converted-space>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>\a alert (bell)</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>\b backspace</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>\f formfeed</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>\n newline</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>\r carriagse return</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>\t tab</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>\v vertical tab</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>\ backslash</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>\? question mark</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>\' quote</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>\'' double quote</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>\ooo character specified as an octal number</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>\xhh character specified in hexadecimal</span></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:105%;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:105%'>&nbsp;</span><b><u><span
+style='font-size:18.0pt;line-height:105%;color:#0070C0'>4.2: Character IO –
+getchar &amp; putchar</span></u></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:105%;color:black'>getchar
+and putchar are used for the input or output only one character.</span><span
+style='font-size:13.0pt;line-height:105%'><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='color:black'><span style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;float:none;word-spacing:0px'>getchar</span>()</span><span
+class=apple-converted-space>&nbsp;</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>It returns an int which is either EOF(indicating
+end-of-file) or the next character in the standard input stream.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>putchar</span>(c)<span
+class=apple-converted-space>&nbsp;</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>puts the character on the output stream.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int</span> main()<br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>{</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int</span> a;<br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>a = getchar();</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>/* read and assign character to c */</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>putchar</span>(a);<br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>/* print c on the screen */</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>return 0;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>}</span></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

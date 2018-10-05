@@ -1,0 +1,134 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>3.1: <span
+style='color:black'>What is the difference between goto and longjmp() and
+setjmp() ?</span></span></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>goto statement implements a local jump of program execution, and
+the longjmp() and setjmp() functions implement a nonlocal, or far, jump of
+program execution.</span></span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:107%;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>3.2: <span
+style='color:black'>Which bit wise operator is suitable for checking whether a
+particular bit is on or off ?</span></span></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>The bitwise AND operator.</span></span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:107%;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>3.3: <span
+style='color:black'>Which bit wise operator is suitable for putting on a
+particular bit in a number ?</span></span></b><span
+class=apple-converted-space><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></span></span></p>
+
+<p class=MsoNormal><span class=apple-converted-space><b><span style='font-size:
+13.0pt;line-height:107%;color:black'>Ans: </span></b></span><span
+style='font-size:13.0pt;line-height:107%;color:black'>The bitwise OR operator.
+In the following code snippet, the bit number 24 is turned ON:some_int =
+some_int | KBit24;</span></span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:107%;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>3.4: <span
+style='color:black'>Define Operator, Operand, and Expression in 'C' ?</span></span></b><span
+class=apple-converted-space><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></span></span></p>
+
+<p class=MsoNormal><span class=apple-converted-space><b><span style='font-size:
+13.0pt;line-height:107%;color:black'>Ans: </span></b></span><span
+style='font-size:13.0pt;line-height:107%;color:black'>Operators are symbols
+which take one or more operands or expressions and perform arithmetic or
+logical computations.</span><br style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Operands are variables or expressions which are
+used in operators to evaluate the expression.</span><br style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Combination of operands and operators form an
+expression.</span></span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:107%;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>3.5: <span
+style='color:black'>Why doesn't strcat(string, '!'); work ?</span></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>There is a very real difference between characters and strings,
+and strcat() concatenates *strings*. Characters in C are represented by small
+integers corresponding to their character set values Strings are represented by
+arrays of characters; you usually manipulate a pointer to the first character
+of the array. It is never correct to use one when the other is expected. To
+append a ! to a string, use strcat(string, &quot;!&quot;);<span
+class=apple-converted-space>&nbsp;</span>&nbsp;</span></span></span></p>
+
+<p class=MsoNormal><span class=apple-converted-space><b><span style='font-size:
+13.5pt;line-height:107%;color:black'>&nbsp;</span></b></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>&nbsp;</span></b></p>
+
+</div>
+
+</body>
+
+</html>

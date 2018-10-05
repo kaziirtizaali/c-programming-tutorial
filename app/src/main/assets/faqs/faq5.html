@@ -1,0 +1,166 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>5.1: <span
+style='color:black'>I had the definition char a[6] in one source file, and in
+another I declared extern char a[]. Why did it work ?&nbsp;</span></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>The declaration extern char a[] simply matches the actual
+definition.</span><br style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>The type ''array-of-type-T'' is the same as
+``array-of-type-T.'' Go ahead and use extern char a[].<span
+class=apple-converted-space>&nbsp;</span></span><br style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>(For greater portability, use it in both files,
+not only in one of them.)</span></span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:107%;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>5.2: <span
+style='color:black'>Why doesn't sizeof properly report the size of an array
+which is a parameter to a function ?</span></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Part of the ANSI conspiracy to restrict people to passing
+pointers; this was undertaken after the first discovery that passing large
+arrays recursively could cause crashes. Since then, with the passing of MS-DOS,
+it has become a non-issue; since all serious machines have virtual memory, you
+can pass as much data as you want on the stack without detectable problems.<span
+class=apple-converted-space>&nbsp;</span></span></span></p>
+
+<p class=MsoNormal><span class=apple-converted-space><span style='font-size:
+13.0pt;line-height:107%;color:black'>&nbsp;</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>5.3:</span></b><span
+style='font-size:13.0pt;line-height:107%;color:black'> </span><b><span
+style='font-size:13.0pt;line-height:107%'>What is the difference between arrays
+and pointers ?</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>Ans: </span></b><span
+style='font-size:13.0pt;line-height:107%;color:black'>Arrays automatically
+allocate space, but can't be relocated or resized. Pointers must be explicitly
+assigned to point to allocated space (perhaps using malloc), but can be
+reassigned (i.e. pointed at different objects) at will, and have many other
+uses besides serving as the base of blocks of memory. Due to the so-called
+equivalence of arrays and pointers , arrays and pointers often seem and in
+particular a pointer to a block of memory assigned by malloc is frequently
+treated (and can be referenced using []) exactly as if it were a true array.<span
+class=apple-converted-space>&nbsp;</span></span></span></p>
+
+<p class=MsoNormal><span class=apple-converted-space><span style='font-size:
+13.0pt;line-height:107%;color:black'>&nbsp;</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>5.4:</span></b><span
+style='font-size:13.0pt;line-height:107%;color:black'> </span><b><span
+style='font-size:13.0pt;line-height:107%'>What is the difference between arrays
+and linked list ?</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>Ans: </span></b><span
+style='font-size:13.0pt;line-height:107%;color:black'>Major differences between
+arrays and linked lists are:<span class=apple-converted-space>&nbsp;</span></span><br
+style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+text-align:start;widows: 2;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>(i) In array consecutive elements are stored in
+consecutive memory locations whereas in linked list it not so.<span
+class=apple-converted-space>&nbsp;</span></span><br style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>(ii) In array address of next element is
+consecutive and whereas in linked list it is specified in the address part of
+each node.</span><br style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>(iii) Linked List makes better use of memory than
+arrays.</span><br style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>(iv) Insertion or deletion of an element in array
+is difficult than insertion or deletion in linked list</span>.</span><b><span
+style='font-size:13.0pt;line-height:107%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>5.5:</span></b><span
+style='font-size:13.0pt;line-height:107%;color:black'> </span><b><span
+style='font-size:13.0pt;line-height:107%'>What is a const pointer ?</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>Ans: </span></b><span
+style='font-size:13.0pt;line-height:107%;color:black'>The access modifier
+keyword const is a promise the programmer makes to the compiler that the value
+of a variable will not be changed after it is initialized.</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

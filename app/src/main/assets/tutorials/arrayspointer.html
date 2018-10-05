@@ -1,0 +1,751 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:106%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:105%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;
+	font-weight:normal;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msopapdefault, li.msopapdefault, div.msopapdefault
+	{mso-style-name:msopapdefault;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:106%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:106%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoTitle align=center style='text-align:center'><b><u><span
+style='font-size:22.0pt;color:#C00000'>Chapter 8: Arrays, Pointer &amp; String</span></u></b></p>
+
+<h1><b><u><span style='font-size:18.0pt;line-height:105%;color:#0070C0'>8.1:
+Arrays</span></u></b></h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:106%;color:black'>Array
+is a collection of similar data type items. Arrays are used to store group of
+data of same datatype. Arrays can of any datatype. Arrays must have constant size.
+Continuous memory locations are used to store array. Array index always starts
+with 0.</span><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>Example for Arrays:</b><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int a[5]; // integer array</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>char a[5]; // character(string) array<span
+class=apple-converted-space>&nbsp;</span></span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>Types of Arrays:<br>
+</b><span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'># One Dimensional Array</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'># Two Dimensional Array</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'># Multi Dimensional Array<span
+class=apple-converted-space>&nbsp;</span></span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:106%;color:#E91E63'>8.1.1
+One Dimensional Array</span></b><span style='font-size:13.0pt;line-height:106%;
+color:black'><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>Array declaration<span class=apple-converted-space>&nbsp;</span></b><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int age [5];</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>Array initialization<span class=apple-converted-space>&nbsp;</span></b><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int age[5]={0, 1, 2, 3, 4, 5};</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>Accessing array<span class=apple-converted-space>&nbsp;</span></b><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>age[0]; /*0_is_accessed*/</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>age[1]; /*1_is_accessed*/</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>age[2]; /*2_is_accessed*/</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:106%;color:#E91E63'>8.1.2
+Two Dimensional Array</span></b><span style='font-size:13.0pt;line-height:106%;
+color:black'><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Two dimensional array is combination of rows n
+columns.</span><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>Array declaration</b><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int arr[2][2];</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>Array initialization</b><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int arr[2][2] = {{1,2}, {3,4}};</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>Accessing array</b><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>arr [0][0] = 1;<span class=apple-converted-space>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>arr [0][1] = 2;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>arr [1][0] = 3;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>arr [1][1] = 4;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:106%;color:#E91E63'>8.1.3
+Multi Dimensional Array</span></b><span style='font-size:13.0pt;line-height:
+106%;color:black'><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>C programming language allows programmer to create
+arrays of arrays known as multidimensional arrays.</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>For example:</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>float a[2][4][3];</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:106%;color:#E91E63'>8.1.4
+Passing Array To Function</span></b><span style='font-size:13.0pt;line-height:
+106%;color:black'><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>In C we can pass entire Arrays to functions as an
+argument.</span><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>For eg.</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>#include &lt;stdio.h&gt;</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>void display(int a)</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>{<span class=apple-converted-space>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; int i;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; for(i=0;i &lt; 4;i++){</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; printf(&quot;%d&quot;,a[i]);</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; }</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>}</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int main(){</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; int c[]={1,2,3,4};</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; display(c);<span
+class=apple-converted-space>&nbsp;</span></span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; //Passing array to display.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; return 0;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>}</span></span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:106%;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;line-height:105%;page-break-after:
+avoid'><b><u><span style='font-size:18.0pt;line-height:105%;font-family:"Calibri Light","sans-serif";
+color:#0070C0'>8.2: Pointer</span></u></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:106%;color:black'>Pointer
+is a variable that stores the address of another variable. They can make some
+things much easier, help improve your program's efficiency, and even allow you
+to handle unlimited amounts of data.<span class=apple-converted-space>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='font-size:13.0pt;line-height:106%'><span style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;float:none;
+word-spacing:0px'>C Pointer is used to allocate memory dynamically i.e. at run
+time. The variable might be any of the data type such as int, float, char,
+double, short etc.</span><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>Syntax :</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>Pointers require a bit of new syntax
+because when you have a pointer, you need the ability to both request the
+memory location it stores and the value stored at that memory location.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>data_type *ptr_name;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>Example :<span class=apple-converted-space>&nbsp;</span><br>
+</b><span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int *a; char *a;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Where, * is used to denote that ''a'' is pointer
+variable and not a normal variable</span>.</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:106%'>Key points to
+remember about pointers in C:</span></b><span style='font-size:13.0pt;
+line-height:106%'><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>#</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>Normal variable stores the value
+whereas pointer variable stores the address of the variable.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>#</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>The content of the C pointer always
+be a whole number i.e. address.</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>#</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>Always C pointer is initialized to
+null, i.e. int *p = null.</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>#</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>The value of null pointer is 0.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>#</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>&amp; symbol is used to get the
+address of the variable.</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>#</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>* symbol is used to get the value of
+the variable that the pointer is pointing to.</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>#</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>If pointer is assigned to NULL, it
+means it is pointing to nothing.</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>#</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>Two pointers can be subtracted to
+know how many elements are available between these two pointers.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>#</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>But, Pointer addition, multiplication,
+division are not allowed.</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>#</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>The size of any pointer is 2 byte
+(for 16 bit compiler).</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>Example program for pointer in C:</b><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>#include<span class=apple-converted-space>&nbsp;</span></span><br>
+<stdio.h style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">int
+main()<br>
+{<br>
+int *ptr, q;<br>
+&nbsp; q = 50;<span class=apple-converted-space>&nbsp;</span><br>
+<br>
+&nbsp; /* address of q is assigned to ptr */<br>
+&nbsp; ptr = &amp;q;<span class=apple-converted-space>&nbsp;</span><br>
+<br>
+&nbsp; /* display q's value using ptr variable */<br>
+&nbsp; printf(&quot;%d&quot;, *ptr);<span class=apple-converted-space>&nbsp;</span><br>
+&nbsp; return 0;<br>
+}<br>
+<br>
+<b><span style='color:#E91E63'>NULL Pointers</span></b><br>
+It is always a good practice to assign a NULL value to a pointer variable in
+case you do not have exact address to be assigned. This is done at the time of
+variable declaration. A pointer that is assigned NULL is called a null pointer.
+Eg : int *ptr = NULL;<br>
+The value of ptr is 0<br>
+<br>
+<b><span style='color:#E91E63'>Pointer Arithmetic</span></b><br>
+<br>
+As you understood pointer is an address which is a numeric value; therefore,
+you can perform arithmetic operations on a pointer just as you can a numeric
+value. There are four arithmetic operators that can be used on pointers: ++,
+--, +, and -.<br>
+<br>
+Example :<span class=apple-converted-space>&nbsp;</span><br>
+ptr++;<br>
+ptr--;<br>
+ptr+21;<br>
+ptr-10;<br>
+<br>
+If a char pointer pointing to address 100 is incremented (ptr++) then it will
+point to memory address 101<br>
+<br>
+<b><span style='color:#E91E63'>Pointers vs Arrays</span></b><br>
+<br>
+Pointers and arrays are strongly related. In fact, pointers and arrays are
+interchangeable in many cases. For example, a pointer that points to the
+beginning of an array can access that array by using either pointer arithmetic
+or array-style indexing.<br>
+<br>
+int main ()<br>
+{<br>
+int var[3] = {1, 2, 3};<br>
+int *ptr;<br>
+printf(&quot;%d \n&quot;,*ptr);<br>
+ptr++;<br>
+printf(&quot;%d \n&quot;,*ptr);<br>
+return 0;<br>
+}<br>
+<br>
+this code will return :<span class=apple-converted-space>&nbsp;</span><br>
+1<br>
+2<br>
+<br>
+<b><span style='color:#E91E63'>Pointer to Pointer</span></b><br>
+<br>
+A pointer to a pointer is a form of multiple indirection or a chain of
+pointers. Normally, a pointer contains the address of a variable. When we
+define a pointer to a pointer, the first pointer contains the address of the
+second pointer, which points to the location that contains the actual value.
+int main ()<br>
+{<br>
+int var;<br>
+int *ptr;<br>
+int **pptr;<br>
+var = 3000;<br>
+ptr = &amp;var;<br>
+pptr = &amp;ptr;<br>
+printf(&quot;Value of var :%d \n&quot;, var);<br>
+printf(&quot;Value available at *ptr :%d \n&quot;,*ptr);<br>
+printf(&quot;Value available at **pptr :%d\n&quot;,**pptr);<br>
+return 0;<br>
+}<br>
+<br>
+this code will return<span class=apple-converted-space>&nbsp;</span><br>
+Value of var :3000<br>
+Value available at *ptr :3000<br>
+Value available at **pptr :3000</span></p>
+
+</stdio.h>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1><b><u><span style='font-size:18.0pt;line-height:105%;color:#0070C0'>8.3:
+String</span></u></b></h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:106%;color:black'>A
+string is simply an array of characters which is terminated by a null character
+'\0' which shows the end of the string.<span class=apple-converted-space>&nbsp;</span></span><span
+style='font-size:13.0pt;line-height:106%'><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Strings are always enclosed by double quotes.
+Whereas, character is enclosed by single quotes in C.<span
+class=apple-converted-space>&nbsp;</span></span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>This declaration and initialization create a
+string with the word &quot;AKKI&quot;.</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>To hold the \0 (null character) at the end of the
+array, the size of array is one more than the number of characters in the word
+&quot;AKKI&quot;.</span><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>char my_name[5] = {'A', 'K', 'K', 'I','\0'};</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>we can also write the above statement as follows:</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>char my_name[] = &quot;AKKI&quot;;</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>C String functions:</b><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>To use string functions programmer must import
+String.h header file.<span class=apple-converted-space>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>String.h header file supports all the string functions
+in C language.<span class=apple-converted-space>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>All the string functions are given below.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>1 strcat ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Concatenates str2 at the end of str1.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>2 strncat ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>appends a portion of string to another</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>3 strcpy ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Copies str2 into str1</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>4 strncpy ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>copies given number of characters of one string to
+another</span><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>5 strlen ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>gives the length of str1.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>6 strcmp ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Returns 0 if str1 is same as str2. Returns &lt;0
+if strl &lt; str2. Returns &gt;0 if str1 &gt; str2.</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>7 strcmpi ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Same as strcmp() function. But, this function
+negotiates case. ''A'' and ''a'' are treated as same.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>8 strchr ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Returns pointer to first occurrence of char in
+str1.</span><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>9 strrchr ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>last occurrence of given character in a string is
+found</span><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>10 strstr ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Returns pointer to first occurrence of str2 in
+str1.</span><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>11 strrstr ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Returns pointer to last occurrence of str2 in str1.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>12 strdup ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>duplicates the string</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>13 strlwr ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>converts string to lowercase</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>14 strupr ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>converts string to uppercase</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>15 strrev ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>reverses the given string</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>16 strset ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>sets all character in a string to given character</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>17 strnset ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>It sets the portion of characters in a string to
+given character</span><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>18 strtok ( )<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>tokenizing given string using delimiter</span></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,626 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:105%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:105%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;
+	font-weight:normal;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msopapdefault, li.msopapdefault, div.msopapdefault
+	{mso-style-name:msopapdefault;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:105%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoTitle align=center style='text-align:center'><b><u><span
+style='font-size:22.0pt;color:#C00000'>Chapter 5: Flow of Control</span></u></b></p>
+
+<p class=MsoTitle align=center style='text-align:center'><b><span
+style='color:#C00000'>&nbsp;</span></b></p>
+
+<h1><b><u><span style='font-size:18.0pt;line-height:105%;color:#0070C0'>5.1:
+Conditional branching – if</span></u></b></h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:105%;
+color:#E91E63'>5.1.1 if statement</span></b><span style='font-size:13.0pt;
+line-height:105%;color:black'><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>An if statement contains a Boolean expression and
+block of statements enclosed within braces.</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Structure of if statement :</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>if (boolean expression )<span
+class=apple-converted-space>&nbsp;</span></span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>/* if expression is true */</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; statements... ; /* Execute statements */</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>If the Boolean expression is true then statement
+block is executed otherwise (if false) program directly goes to next statement
+without executing Statement block.</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:105%;color:#E91E63'>5.1.2
+if...else statement</span></b><span style='font-size:13.0pt;line-height:105%;
+color:black'><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>If statement block with else statement is known as
+as if...else statement. Else portion is non-compulsory.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Structure of if...else</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>if(</span>condition)<br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>{</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; statements...</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>}</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>else</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>{</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; statements...</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>}</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>If the condition is true, then compiler will
+execute the if block of statements, if false then else block of statements will
+be executed.</span><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>We can use multiple if-else for one inside other
+this is called as Nested if-else.</span></span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:105%;color:black'>&nbsp;</span></p>
+
+<h1><b><u><span style='font-size:18.0pt;line-height:105%;color:#0070C0'>5.2:
+Conditional Selection – switch</span></u></b></h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:105%'>&nbsp;</span><b><span
+style='font-size:13.0pt;line-height:105%;color:#E91E63'>switch()</span></b><span
+style='font-size:13.0pt;line-height:105%;color:black'><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>A switch statement is used instead of nested
+if...else statements. It is multiple branch decision statement of C. A switch
+statement tests a variable with list of values for equivalence. Each value is
+called a case.</span><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>The case value must be a constant integer.<span
+class=apple-converted-space>&nbsp;</span></span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Structure of switch() statement :</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>switch (expression)</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>{</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; case value: statements...</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; case value: statements...</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; default : statements...</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>}</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Individual case keyword and a semi-colon (:) is
+used for each constant. Switch tool is used for skipping to particular case,
+after jumping to that case it will execute all statements from cases beneath
+that case this is called as ''Fall Through''.<span class=apple-converted-space>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>In the example below, for example, if the value 2
+is entered, then the program will print two one something else!</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int</span> main()<br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>{</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; int i;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; printf(''Enter an integer: '');</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; scanf(''%d'',&amp;i); &nbsp; switch(i)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; {</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; case 4: printf(''four ''); break;</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; case 3: printf(''three ''); break;</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; case 2: printf(''two '');</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; case 1: printf(''one '');</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; default: printf(''something else!'');</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; }</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; return 0;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>}</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>To avoid fall through, the break statements are
+necessary to exit the switch. If value 4 is entered, then in case 4 it will
+just print four and ends the switch.</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>The default label is non-compulsory, It is used
+for cases that are not present.</span></span></p>
+
+<h1 align=center style='text-align:center'><b><span style='font-size:18.0pt;
+line-height:105%;color:#0070C0'>&nbsp;</span></b></h1>
+
+<h1><b><u><span style='font-size:18.0pt;line-height:105%;color:#0070C0'>5.3:
+Loops – while &amp; for</span></u></b></h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:105%;
+color:#E91E63'>while loop</span></b><span style='font-size:13.0pt;line-height:
+105%;color:black'><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>The while loop calculates the expression before
+every loop. If the expression is true then block of statements is executed, so
+it will not execute If the condition is initially false. It needs the
+parenthesis like the if statement.</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>while</span> ( expression )<span
+class=apple-converted-space>&nbsp;</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>/* while expression is true do following*/</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; statements... ;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:105%;color:#E91E63'>Do
+While loop</span></b><span style='font-size:13.0pt;line-height:105%;color:black'><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>This is equivalent to a while loop, but it have
+test condition at the end of the loop. The Do while loop will always execute at
+least once.</span><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>do</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; statements ;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>while ( expression );</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>/* while expression is true do...*/</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:105%;color:#E91E63'>For
+loop</span></b><span style='font-size:13.0pt;line-height:105%;color:black'><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>This is very widely held loop.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>For loops work like the corresponding while loop
+shown in the above example. The first expression is treated as a statement and
+executed, then the second expression is test or condition which is evaluated to
+see if the body of the loop should be executed. The third expression is
+increment or decrement which is performed at the end of every
+iteration/repetition of the loop.</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>for (expr1; expr2; expr3)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; statements...;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; In while loop it can happen that the
+statement will never execute But In the do-while loop, test condition is based
+at the end of loop therefore the block of statement will always execute at
+least once. This is the main difference between the while and the do-while loop.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; For example, to execute a statement 5
+times:<span class=apple-converted-space>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>for (i = 0; i &lt; 5; i++)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; printf(''%d\\n'',i);</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Another way of doing this is:</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>i</span> = 5;<br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>while (i--)</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; statements;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>While using this method, make sure that value of i
+is greater than zero, or make the test i--&gt;0.</span></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:105%;color:black'>&nbsp;</span></p>
+
+<h1><b><u><span style='font-size:18.0pt;line-height:105%;color:#0070C0'>5.4:
+Local Jumps goto</span></u></b></h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:105%;color:black'>We
+can jump to any statement inside the same function using<span
+class=apple-converted-space>&nbsp;</span></span><b style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'><span
+style='font-size:13.0pt;line-height:105%'>goto</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'><span style='font-size:13.0pt;line-height:105%'>.
+To spot the end point of the jump a label (tag) is used. goto statement is not
+to ideal to choose in any programming language because it makes difficult to
+trace the flow of a program, makes the program hard to understand, and to guess
+the output.<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>void any_function(void)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>{</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; for( ... )</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; &nbsp; if (problem) goto error;</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>error:</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>solve problem</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>}</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>But in the example above, remember that the code
+could be rewritten as:</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>void function1(void)</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>{</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; for( ... )</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; &nbsp; if (problem)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; &nbsp; {</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; &nbsp; &nbsp; solve problem</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; &nbsp; &nbsp; return;</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; &nbsp; &nbsp; }</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>}</span></span></span></p>
+
+<h1><span style='font-size:14.0pt;line-height:105%;font-family:"Calibri","sans-serif";
+color:windowtext'>&nbsp;</span></h1>
+
+<h1><b><u><span style='font-size:18.0pt;line-height:105%;color:#0070C0'>5.5:
+Break and Continue</span></u></b></h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:105%;
+color:#E91E63'>5.5.1 Break statement</span></b><span style='font-size:14.0pt;
+line-height:105%;color:black'><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><span style='font-size:13.0pt;line-height:105%;color:black'><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Break statement is usually used to terminate a case
+in the switch statement.<span class=apple-converted-space>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Break statement in loops to instantly terminates
+the loop and program control goes to the next statement after the loop.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>If break statement is used in nested loops (i.e.,
+loop within another loop), the break statement will end the execution of the
+inner loop and Program control goes back to outer loop.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Syntax :</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>break;</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+</span><span style='font-size:14.0pt;line-height:105%;color:black'><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:14.0pt;line-height:105%;color:#E91E63'>5.5.2
+Continue statement</span></b><span style='font-size:14.0pt;line-height:105%;
+color:black'><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><span style='font-size:13.0pt;line-height:105%;color:black'><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>In C programming language the continue statement
+works slightly similar to the break statement. The continue restarts the loop
+with the next value of item. All the line code below continue statement is
+skips.</span><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Syntax :</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>continue;<span class=apple-converted-space>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>In the for loop, continue statement skips the test
+condition and increment value of the variable to execute again and In the while
+and do...while loops, continue skips all the statements and program control
+goes to at the end of loop for tests condition.</span></span></p>
+
+<h1 align=center style='text-align:center'>&nbsp;</h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

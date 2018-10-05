@@ -1,0 +1,515 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:105%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:105%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;
+	font-weight:normal;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.msotitlecxspfirst, li.msotitlecxspfirst, div.msotitlecxspfirst
+	{mso-style-name:msotitlecxspfirst;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.msotitlecxspmiddle, li.msotitlecxspmiddle, div.msotitlecxspmiddle
+	{mso-style-name:msotitlecxspmiddle;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.msotitlecxsplast, li.msotitlecxsplast, div.msotitlecxsplast
+	{mso-style-name:msotitlecxsplast;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.msopapdefault, li.msopapdefault, div.msopapdefault
+	{mso-style-name:msopapdefault;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:105%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoTitle align=center style='text-align:center'><b><u><span
+style='font-size:22.0pt;color:#C00000'>Chapter 3: Variables and Operators</span></u></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;<b><u><span style='font-size:18.0pt;line-height:105%;
+color:#0070C0'>3.1: Variables</span></u></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:105%;
+color:#E91E63'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:105%;
+color:#E91E63'>Variable Declaration</span></b><b><span style='font-size:13.0pt;
+line-height:105%;color:black'><br>
+</span></b><span style='font-size:13.0pt;line-height:105%;color:black'><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; Usually Variables are declared before use
+either at the start of a block of code after the opening { and before any other
+statements or outside a function.</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>--------------------------</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int</span> a,b; /* global variables */<br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>main()</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>{</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>float a; /* local variables */</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>}</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>--------------------------</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Local variables can only accessed within that
+function only whereas Global variables can access in whole program.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:105%;color:#E91E63'>Variable
+Types</span></b><span style='font-size:13.0pt;line-height:105%;color:black'><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; There are many 'built-in' data types in C.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>short int -128 to 127 (1 byte)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>unsigned short int 0 to 255 (1 byte)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>char 0 to 255 or -128 to +127 (1 byte)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>unsigned char 0 to 255 (1 byte)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>signed char -128 to 127 (1 byte)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int</span> -32,768 to +32,767 (2 bytes)<br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>unsigned int 0 to +65,535 (2 bytes)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>long int -2,147,483,648 to +2,147,483,647 (4 bytes)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>unsigned long int 0 to 4,294,967,295 (4 bytes)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>float single precision floating point (4 bytes)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>double double precision floating point (8 bytes)</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>long double extended precision floating point (10
+bytes)</span><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:105%;color:#E91E63'>&nbsp;Variable
+Names</span></b><span style='font-size:13.0pt;line-height:105%;color:black'><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; we can use any combination of letters and
+numbers for Variable and function names but it must start with a letter.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>We can use Underscore (_) as a letter in variable
+name and can begin with an underscore But Identifiers beginning with an
+underscore are reserved, And identifiers beginning with an underscore followed
+by a lower case letter are reserved for file scope identifiers Therefore using
+underscore as starting letter is not desirable.</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>Akki</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>and&nbsp;</span><b style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>akki</b><span
+class=apple-converted-space><span style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;float:none;word-spacing:0px'>&nbsp;</span>are
+different identifiers because upper and lower case letters are treated as
+different identifiers&nbsp;</span></span></p>
+
+<p class=MsoNormal><span class=apple-converted-space><span style='font-size:
+14.0pt;line-height:105%;color:black'>&nbsp;</span></span></p>
+
+<h1><b><u><span style='font-size:18.0pt;line-height:105%;color:#0070C0'>3.2:
+Operators</span></u></b></h1>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:105%;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:105%;color:black'>An
+operator is a symbol. Compiler identifies Operator and performs specific
+mathematical or logical operation. C provides following operators :<span
+class=apple-converted-space>&nbsp;</span></span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:105%;color:black'><br>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'># Arithmetic Operators</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'># Increment and Decrement Operators</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'># Relational Operators</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'># Logical Operators</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'># Cast Operators</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'># Bitwise Operators</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'># Assignment Operators</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:105%;color:#E91E63'>&nbsp;Arithmetic
+Operators</span></b><span style='font-size:13.0pt;line-height:105%;color:black'><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><span style='font-size:13.0pt;line-height:105%;color:darkviolet'>*
+multiplication<br>
+/ division<br>
+% remainder after division (modulo arithmetic)<br>
++ addition<br>
+- subtraction and unary minus<br>
+<br>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;float:none;word-spacing:0px'><span
+style='font-size:13.0pt;line-height:105%'>&nbsp;Increment and Decrement
+Operators</span></span></b><span style='font-size:13.0pt;line-height:105%;
+color:black'><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Increment and decrement operators are used to add
+or subtract 1 from the current value of oprand.</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><span style='font-size:13.0pt;line-height:105%;color:darkviolet'>++
+increment<br>
+-- decrement<br>
+<br>
+</span><span style='font-size:13.0pt;line-height:105%;color:black'><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Increment and Decrement operators can be prefix or
+postfix. In the prefix style the value of oprand is changed before the result
+of expression and in the postfix style the variable is modified after result.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>For eg.</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>a = 9;</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>b = a++ + 5; /* a=10 b=14 */</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>a = 3;</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>b = ++a + 6; /* a=10 b=15 */</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:105%;color:#E91E63'>&nbsp;Relational
+Operators</span></b><span style='font-size:13.0pt;line-height:105%;color:black'><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><span style='font-size:13.0pt;line-height:105%;color:darkviolet'>==
+equal.<br>
+!= Not equal.<br>
+&gt; &lt; Greater than/less than<br>
+&gt;= greater than or equal to<span class=apple-converted-space>&nbsp;</span><br>
+&lt;= less than or equal to<span class=apple-converted-space>&nbsp;</span><br>
+<br>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;float:none;word-spacing:0px'><span
+style='font-size:13.0pt;line-height:105%'>&nbsp;Logical Operators</span></span></b><span
+style='font-size:13.0pt;line-height:105%;color:black'><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>&amp;&amp;</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>Called Logical AND operator. If both
+the operands are non-zero, then condition becomes true.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>||</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>Called Logical OR Operator. If any of
+the two operands is non-zero, then condition becomes true.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>!</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>Called Logical NOT Operator. Use to
+reverses the logical state of its operand. If a condition is true, then Logical
+NOT operator will make false.</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:105%;color:#E91E63'>&nbsp;Cast
+Operators</span></b><span style='font-size:13.0pt;line-height:105%;color:black'><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Cast operators are used to convert a value from
+one to another type.</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>(float) sum; &nbsp; converts type to float</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>(int) fred; &nbsp; converts type to int</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:105%;color:#E91E63'>Bitwise
+Operators<span class=apple-converted-space>&nbsp;</span></span></b><span
+style='font-size:13.0pt;line-height:105%;color:black'><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Bitwise operators performs operation on actual
+bits present in each byte of a variable. Each byte contain 8 bits, each bit can
+store the value 0 or 1<span class=apple-converted-space>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><span style='font-size:13.0pt;line-height:105%;color:darkviolet'>~ one's
+complement<br>
+&amp; bitwise AND<br>
+^ bitwise XOR<br>
+| bitwise OR<br>
+&lt;&lt; left shift (binary multiply by 2)<br>
+&gt;&gt; right shift (binary divide by 2)<br>
+<br>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;float:none;word-spacing:0px'><span
+style='font-size:13.0pt;line-height:105%'>Assignment Operators</span></span></b><span
+style='font-size:13.0pt;line-height:105%;color:black'><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><span style='font-size:13.0pt;line-height:105%;color:darkviolet'>=
+assign<br>
++= assign with add<br>
+-= assign with subtract<br>
+*= assign with multiply<br>
+/= assign with divide<br>
+%= assign with remainder<br>
+&gt;&gt;= assign with right shift<br>
+&lt;&lt;= assign with left shift<br>
+&amp;= assign with bitwise AND<span class=apple-converted-space>&nbsp;</span><br>
+^= assign with bitwise XOR<br>
+|= assign with bitwise OR<br>
+<br>
+</span><span style='font-size:13.0pt;line-height:105%;color:black'><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>For example,</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>a = a + 64; is same as<span
+class=apple-converted-space>&nbsp;</span></span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>a += 64;</span></span></p>
+
+</div>
+
+</body>
+
+</html>

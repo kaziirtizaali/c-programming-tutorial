@@ -1,0 +1,114 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>7.1: What is the difference between strings and character arrays ?</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>A major difference is: string will have static storage duration,
+whereas as a character array will not, unless it is explicity specified by
+using the static keyword.</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'> 7.2: Does there exist any other function which can be used to
+convert an integer or a float to a string ?</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Some implementations provide a nonstandard function called itoa(),
+which converts an integer to string.</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'> 7.3: Difference between strdup and strcpy ? </span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Both copy a string. strcpy wants a buffer to copy into. strdup
+allocates a buffer using malloc(). Unlike strcpy(), strdup() is not specified
+by ANSI.</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>7.4: What are differences between sizeof operator and strlen
+function ? </span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>sizeof is keyword of c which can find size of a string constant
+including null character but strlen is function which has been defined string.h
+and can find number of characters in a string excluding null character.</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>7.5: What do the functions atoi(), itoa() and gcvt() do ?</span></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>Ans: </span></b><span
+style='font-size:13.0pt;line-height:107%;color:black'>atoi() is a macro that
+converts integer to character.</span><br style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>itoa() It converts an integer to string</span><br
+style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+text-align:start;widows: 2;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>gcvt() It converts a floating point number to
+string</span></span></p>
+
+</div>
+
+</body>
+
+</html>

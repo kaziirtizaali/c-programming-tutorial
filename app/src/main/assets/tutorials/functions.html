@@ -1,0 +1,405 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:105%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:105%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;
+	font-weight:normal;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:28.0pt;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light","sans-serif";
+	color:#2E74B5;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light","sans-serif";
+	letter-spacing:-.5pt;}
+p.msopapdefault, li.msopapdefault, div.msopapdefault
+	{mso-style-name:msopapdefault;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:105%;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:105%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoTitle align=center style='text-align:center'><b><u><span
+style='font-size:22.0pt;color:#C00000'>Chapter 6: Functions</span></u></b></p>
+
+<h1><b><u><span style='font-size:18.0pt;line-height:105%;color:#0070C0'>6.1:
+Functions Basics</span></u></b></h1>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:105%;
+color:#E91E63'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:105%;
+color:#E91E63'>6.1.1 Building Blocks of Programs</span></b><span
+style='font-size:13.0pt;line-height:105%;color:black'><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Functions like main, printf and scanf, We have
+already come through.</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>All C programs made up of one or more functions.
+There must be one and only one main function. All functions are at the same
+level - there is no nesting.<span class=apple-converted-space>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:105%;color:#E91E63'>6.1.2
+Return Value</span></b><span style='font-size:13.0pt;line-height:105%;
+color:black'><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Including main All functions can return a value,.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Void Return type is specified if fuction is
+returning no value. Functions can return arithmetic values (int, float etc.),
+pointers structures, unions, or will not return anything (void) But they cannot
+return an array or a function.</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+</span><b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'><span style='font-size:13.0pt;line-height:105%;color:#E91E63'>6.1.3
+Function Parameters</span></b><span style='font-size:13.0pt;line-height:105%;
+color:black'><br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Any function (as well as main) can receive some
+values called parameters. While calling a function we must pass values of
+parameters.</span><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Format of Function :-</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&lt; return_type&gt; &lt;
+function_name&gt;(parameters...)</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>{</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>}</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Only Values of the parameters to the function at
+the time of calling it<span class=apple-converted-space>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>If, In definition of function contains void as
+parameter then function will not accept any parameter.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Calling the expressions specified as arguments in
+a function call and the variables listed as parameters in the function
+definition is very usual. For example, in the following call of function, the
+expressions x and y*2 are the arguments passed to the function. The values of
+the x and y will be copied into the parameters p and q. The variable given in
+the function definition are called as formal argument and the expression given
+in the function call are called as the actual argument .</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>cal_area(a, b*2);</span></span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:105%;color:black'>&nbsp;</span></p>
+
+<h1><b><u><span style='font-size:18.0pt;line-height:105%;color:#0070C0'>6.2:
+Definitions &amp; Declaration</span></u></b></h1>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:105%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:105%'>A function
+definition contains function name, parameters, its code and return type and A
+function declaration contains only name and return type.<span
+class=apple-converted-space><span style='color:black'>&nbsp;</span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>User can define a function only once but it can be
+declared several times.</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>declaration of function</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'><span style='color:black'>&nbsp;</span></span></span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Syntax :</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&lt; return_type&gt; &lt;
+function_name&gt;(arguments... );</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>/* Declaration of area() */</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int area(int x, int y);</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int main()</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>{</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int x=10, y=25; &nbsp; printf(''%d\n'',area(x,y)));</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; return 0;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>}</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>Definition of function</b><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>syntax</span><br style='orphans: auto;text-align:
+start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&lt; return_type&gt; &lt;
+function_name&gt;(arguments)</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>{</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Body of function;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>}</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>/* Definition of area() */</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>int area(int x, int y)</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>{</span><br style='orphans: auto;text-align:start;
+widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; int z;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; z = x*y;</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp; retrun z; }</span></span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:105%'>&nbsp;</span></p>
+
+<h1><b><u><span style='font-size:18.0pt;line-height:105%;color:#0070C0'>6.3:
+Standard Header Files</span></u></b></h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:105%;color:black'>standard
+header files contains Prototypes of the library functions. For example, math.h
+contains prototypes for mathematical operations.</span><span style='font-size:
+13.0pt;line-height:105%'><br style='orphans: auto;text-align:start;widows: 1;
+-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>some standard header files are:</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>stdio.h</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>printf, scanf, getchar, putchat etc.</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>stdlib.h<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>utility functions; number conversions, memory
+allocation, exit and system , Quick Sort</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>float.h</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>system limits for floating point types</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>math.h<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>mathematical functions</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>string.h<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>string functions</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>assert.h</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>assertions</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>ctype.h</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>character class tests</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>time.h<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>date and time functions</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>limits.h</b><span class=apple-converted-space><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>&nbsp;</span>system limits for integral types</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>setjmp.h<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>non-local jumps</span><br style='orphans: auto;
+text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>signal.h<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>signals and error handling</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<b style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>stdarg.h<span class=apple-converted-space>&nbsp;</span></b><span
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>variable length parameter lists</span><br
+style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<br style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>Use the #include (preprocessor directive) and give
+angle brackets around the name of the file to include these standard header
+files in your program<span class=apple-converted-space>.</span></span></span></p>
+
+<h1 align=center style='text-align:center'><b><span style='font-size:13.0pt;
+line-height:105%;color:#0070C0'>&nbsp;</span></b></h1>
+
+<p class=MsoTitle align=center style='text-align:center'>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

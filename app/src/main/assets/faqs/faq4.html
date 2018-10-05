@@ -1,0 +1,125 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>4.1: <span
+style='color:black'>Is there more than one null statement<span
+class=apple-converted-space>&nbsp;</span></span>?</span></span></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Sort of. You can use '';'', ''0;'', or ''1;'' - they will all act
+like a null statement. Only the first is a ''true'' null statement (all bits
+zero). They are basically equivalent. Note that (void *) 0; is a null statement
+of type pointer to void, for instance.</span></span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:107%;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>4.2: <span
+style='color:black'>Is { } a null statement ?</span></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>No. { statement-list[opt] } is a compound statement. An empty
+block is not the same as a null statement, however, although it can be used in
+many of the same places. It's really a null block.</span></span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:107%;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>4.3: <span
+style='color:black'>I use the statement #define NULLSTMT(F) (F) ; to allow me
+to cast a null statement to an appropriate type.</span></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>This trick, though popular in some circles, does not buy much. The
+resulting code is invalid, and will not compile. This (in the author's opinion)
+outweighs any arguable type consistency. It may be more common in industrial
+code. If it becomes common practice, C++ will probably legalize it.<span
+class=apple-converted-space>&nbsp;</span></span></span></p>
+
+<p class=MsoNormal><span class=apple-converted-space><span style='font-size:
+13.0pt;line-height:107%;color:black'>&nbsp;</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>4.4: <span
+style='color:black'>Is a null statement a null pointer ?</span></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>No. A null pointer is a pointer where all of the address bits are
+zero (no matter what the segment bits are), and can be obtained by typing
+'(char *) (int) 0'. A null statement is not a pointer to anything. They are not
+interchangeable, although you can combine them to get an effectively-null
+statement, such as NULL;. This does not buy you anything.</span></span></p>
+
+<p class=MsoNormal><span style='font-size:13.0pt;line-height:107%;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%'>4.5: </span></b><span
+class=apple-converted-space><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></span><b><span style='font-size:13.0pt;line-height:
+107%;color:black'>What is a null pointer ?</span></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>There are times when it’s necessary to have a pointer that doesn’t
+point to anything. The macro NULL, defined in , has a value that’s guaranteed
+to be different from any valid pointer. NULL is a literal zero, possibly cast
+to void* or char*.</span><span class=apple-converted-space><span
+style='font-size:13.5pt;line-height:107%;color:black'>&nbsp;</span></span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.5pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

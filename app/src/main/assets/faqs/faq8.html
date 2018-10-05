@@ -1,0 +1,144 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>8.1 What does static variable mean ?</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>There are 3 main uses for the static.</span><br style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>1. If you declare within a function: It retains
+the value between function calls</span><br style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>2. If it is declared for a function name: By
+default function is extern..so it will be visible from other files if the
+function declaration is as static..it is invisible for the outer files<span
+class=apple-converted-space>&nbsp;</span></span><br style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>3. Static for global variables: By default we can
+use the global variables from outside files If it is static global..that
+variable is limited to with in the file.<span class=apple-converted-space>&nbsp;</span></span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'> 8.2 Can static variables be declared in a header file ? </span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>You can’t declare a static variable without defining it as well
+(this is because the storage class modifiers static and extern are mutually
+exclusive).<span class=apple-converted-space>&nbsp;</span></span><br
+style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+text-align:start;widows: 2;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>A static variable can be defined in a header file,
+but this would cause each source file that included the header file to have its
+own private copy of the variable, which is probably not what was intended.</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>8.3 Can a variable be both constant and volatile ? </span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Yes.<span class=apple-converted-space>&nbsp;</span></span><br
+style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+text-align:start;widows: 2;-webkit-text-stroke-width: 0px;word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>The const modifier means that this code cannot
+change the value of the variable, but that does not mean that the value cannot
+be changed by means outside this code.</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>8.4 Where are the auto variables stored ? </span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Auto variables are stored in main memory and their default value
+is a garbage value.</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>8.5 What is the difference between ordinary variable and pointer
+in C ?</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span class=apple-converted-space><span
+style='font-size:13.0pt;line-height:107%;color:black'>&nbsp;</span></span><span
+style='font-size:13.0pt;line-height:107%;color:black'>An ordinary variable is
+like a container it can hold any value and we can change the value of ordinary
+variable at a time throughout the program.</span><br style='font-variant-ligatures: normal;
+font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+word-spacing:0px'>
+<span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+float:none;word-spacing:0px'>A pointer is a variable that stores the address of
+another Variable.<span class=apple-converted-space>&nbsp;</span></span></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>10.1: What can I safely assume about the initial values of
+variables which are not explicitly initialized? If global variables start out
+as ''zero,'' is that good enough for null pointers and floating-point zeroes ?</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>They're always zero<span class=apple-converted-space>.</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'> 10.2: How can I write data files which can be read on other
+machines with different word size, byte order, or floating point formats ?</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>The traditional solution, pioneered by Microsoft, is to sell
+enough copies of your proprietary, slow, and limited software that everyone
+else supports your formats.</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'> 10.3: How can I insert or delete a line (or record) in the middle
+of a file ?</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Using fcntl(), lock the line or record in the file exclusively.
+Now, using another thread, read the file, at each byte, trying to write that
+byte back. Whenever you succeed, write that byte into another file. Then copy
+the new file over the old file, releasing the lock first.<span
+class=apple-converted-space>&nbsp;</span></span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'> 10.4: What is the most efficient way to count the number of bits
+which are set in a value ?</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Start a counter at zero and add one to it for each bit set. Some
+operating systems may provide a call to do this. For values over INT_MAX/2,
+start the counter at CHAR_BIT * sizeof(int) and subtract one for each bit not
+set.</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'> 10.5: Are pointers really faster than arrays? How much do
+function calls slow things down? Is ++i faster than i = i + 1 ?</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Yes. About 10 ms per call. Only on machines which feature
+preincrement addressing.</span></span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'> 10.6: If I have a char * variable pointing to the name of a
+function as a string, how can I call that function ?</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Code like this ought to work.long int foo() { return 2L +3; /*
+returns both values */ }</span>.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'> 10.7: This program crashes before it even runs! (When
+single-stepping with a debugger, it dies before the first statement in main.) ?</span></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:13.0pt;line-height:107%;
+color:black'>Ans: </span></b><span style='font-size:13.0pt;line-height:107%;
+color:black'>You probably declared main as ``void main(void)''. It's also
+possible that the first statement in main is abort(); - by the as if rule, the
+compiler can abort at any time before then, too. Some compilers have bugs, and
+will produce buggy code for any module which includes the letters ``a'', ``b'',
+``o'', ``r'', and ``t'' in that order before the first function declaration.</span></span></p>
+
+</div>
+
+</body>
+
+</html>
